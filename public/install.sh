@@ -1,77 +1,81 @@
 #!/bin/sh
 # GenioOne Community Edition installer
 # Usage: curl -fsSL https://genio.sh/install.sh | sh
+#
+# CE is source-first: this script clones the repository and prepares the
+# local environment files. It does not download prebuilt binaries or images.
 set -eu
 
 REPO="dnplus/genio-one"
-INSTALL_DIR="${GENIO_INSTALL_DIR:-$HOME/.genio}"
-BIN_DIR="$INSTALL_DIR/bin"
+REPO_URL="https://github.com/${REPO}.git"
+TARGET_DIR="${GENIO_INSTALL_DIR:-$PWD/genio-one}"
+REF="${GENIO_REF:-main}"
 
 log() { printf '%s\n' "$*" >&2; }
 die() { log "error: $*"; exit 1; }
+need() { command -v "$1" >/dev/null 2>&1 || die "$1 is required but not found in PATH"; }
 
-detect_platform() {
-  os=$(uname -s)
-  arch=$(uname -m)
-  case "$os" in
-    Linux) os="linux" ;;
-    Darwin) os="darwin" ;;
-    *) die "unsupported OS: $os" ;;
-  esac
-  case "$arch" in
-    x86_64|amd64) arch="amd64" ;;
-    arm64|aarch64) arch="arm64" ;;
-    *) die "unsupported architecture: $arch" ;;
-  esac
-  printf '%s_%s\n' "$os" "$arch"
-}
+check_prereqs() {
+  need git
+  need node
+  need docker
 
-latest_release_tag() {
-  curl -fsSL "https://api.github.com/repos/${REPO}/releases/latest" \
-    | grep '"tag_name":' \
-    | head -1 \
-    | sed -E 's/.*"tag_name": *"([^"]+)".*/\1/'
-}
-
-main() {
-  command -v curl >/dev/null 2>&1 || die "curl is required"
-
-  platform=$(detect_platform)
-  log "GenioOne CE installer"
-  log "Detected platform: ${platform}"
-
-  tag=$(latest_release_tag || true)
-  if [ -z "${tag:-}" ]; then
-    log ""
-    log "No published release found for ${REPO} yet."
-    log "GenioOne Community Edition is available as source today:"
-    log "  https://github.com/${REPO}"
-    log ""
-    log "Once a release is published, this script will download and install"
-    log "the matching build for your platform automatically."
+  if command -v pnpm >/dev/null 2>&1; then
+    :
+  else
+    log "pnpm not found. Install it first: https://pnpm.io/installation"
     exit 1
   fi
 
-  asset="genio-one_${tag}_${platform}.tar.gz"
-  url="https://github.com/${REPO}/releases/download/${tag}/${asset}"
+  if command -v bun >/dev/null 2>&1; then
+    :
+  else
+    log "bun not found. Install it first: https://bun.sh"
+    exit 1
+  fi
 
-  log "Latest release: ${tag}"
-  log "Downloading ${url}"
+  if docker compose version >/dev/null 2>&1; then
+    :
+  else
+    die "docker compose is required (docker compose v2 plugin)"
+  fi
+}
 
-  mkdir -p "$BIN_DIR"
-  tmp_dir=$(mktemp -d)
-  trap 'rm -rf "$tmp_dir"' EXIT
+main() {
+  log "GenioOne Community Edition installer"
+  log "Repository: ${REPO_URL} (ref: ${REF})"
+  log ""
 
-  curl -fsSL "$url" -o "$tmp_dir/$asset" \
-    || die "failed to download release asset: $url"
+  check_prereqs
 
-  tar -xzf "$tmp_dir/$asset" -C "$tmp_dir"
-  find "$tmp_dir" -maxdepth 1 -type f -perm -u+x -exec cp {} "$BIN_DIR/" \;
+  if [ -e "$TARGET_DIR" ]; then
+    die "target directory already exists: ${TARGET_DIR}"
+  fi
+
+  log "Cloning into ${TARGET_DIR} ..."
+  git clone --branch "$REF" --depth 1 "$REPO_URL" "$TARGET_DIR"
+
+  cd "$TARGET_DIR"
+
+  log "Installing dependencies ..."
+  pnpm install --frozen-lockfile
+
+  for app in apps/platform apps/bot; do
+    example="$app/.env.example"
+    target="$app/.env.local"
+    if [ -f "$example" ] && [ ! -f "$target" ]; then
+      cp "$example" "$target"
+      log "Created ${target}"
+    fi
+  done
 
   log ""
-  log "Installed to ${BIN_DIR}"
-  log "Add it to your PATH:"
-  log "  export PATH=\"${BIN_DIR}:\$PATH\""
+  log "GenioOne CE is ready to start."
+  log ""
+  log "  cd $(basename "$TARGET_DIR")"
+  log "  pnpm dev"
+  log ""
+  log "Full quickstart: https://github.com/${REPO}/blob/main/docs/public/ce/quickstart.md"
 }
 
 main "$@"
