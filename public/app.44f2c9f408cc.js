@@ -1,4 +1,32 @@
 (() => {
+  const copyButton = document.querySelector(".install-copy");
+  const codeEl = document.querySelector("#install-command code");
+  if (copyButton && codeEl) {
+    let resetTimer;
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(codeEl.textContent);
+      } catch {
+        const range = document.createRange();
+        range.selectNode(codeEl);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand("copy");
+        selection.removeAllRanges();
+      }
+      copyButton.textContent = "Copied";
+      copyButton.classList.add("is-copied");
+      clearTimeout(resetTimer);
+      resetTimer = setTimeout(() => {
+        copyButton.textContent = "Copy";
+        copyButton.classList.remove("is-copied");
+      }, 2000);
+    });
+  }
+})();
+
+(() => {
   const form = document.querySelector("#waitlist-form");
   if (!form) return;
 
