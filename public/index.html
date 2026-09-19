@@ -69,13 +69,7 @@
                   <polygon points="0 0, 9 3, 0 6" fill="#38bdf8" />
                 </marker>
                 <marker id="arch-arrow-violet" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
-                  <polygon points="0 0, 9 3, 0 6" fill="#a78bfa" />
-                </marker>
-                <marker id="arch-arrow-rose" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
-                  <polygon points="0 0, 9 3, 0 6" fill="#fb7185" />
-                </marker>
-                <marker id="arch-arrow-gray" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
-                  <polygon points="0 0, 9 3, 0 6" fill="#64748b" />
+                  <polygon points="0 0, 9 3, 0 6" fill="#818cf8" />
                 </marker>
                 <pattern id="arch-grid" width="36" height="36" patternUnits="userSpaceOnUse">
                   <path d="M 36 0 L 0 0 0 36" stroke="rgba(234, 240, 255, 0.035)" stroke-width="0.5"/>
@@ -93,41 +87,35 @@
                 <text x="530" y="136" class="arch-badge-gateway" font-size="8" font-weight="700" letter-spacing="0.06em" text-anchor="middle">EXECUTION GATEWAYS</text>
               </g>
               <g transform="translate(40, 42)">
-                <rect x="0" y="0" width="10" height="10" rx="2.5" fill="rgba(14, 165, 233, 0.2)" stroke="#38bdf8" stroke-width="1"/>
+                <rect x="0" y="0" width="10" height="10" rx="2.5" fill="rgba(56, 189, 248, 0.2)" stroke="#38bdf8" stroke-width="1"/>
                 <text x="16" y="9" class="arch-legend-text" font-size="9">Community Edition (CE)</text>
-                <rect x="0" y="20" width="10" height="10" rx="2.5" fill="rgba(139, 92, 246, 0.2)" stroke="#a78bfa" stroke-width="1"/>
+                <rect x="0" y="20" width="10" height="10" rx="2.5" fill="rgba(129, 140, 248, 0.2)" stroke="#818cf8" stroke-width="1"/>
                 <text x="16" y="29" class="arch-legend-text" font-size="9">Enterprise Edition (EE)</text>
-                <rect x="0" y="40" width="10" height="10" rx="2.5" fill="rgba(100, 116, 139, 0.2)" stroke="#94a3b8" stroke-width="1"/>
+                <rect x="0" y="40" width="10" height="10" rx="2.5" fill="rgba(148, 163, 184, 0.2)" stroke="#94a3b8" stroke-width="1"/>
                 <text x="16" y="49" class="arch-legend-text" font-size="9">External Ecosystem</text>
               </g>
               <g class="arch-node arch-ce" id="node-ctrl-plane">
                 <rect x="365" y="38" width="230" height="64" rx="8" class="arch-mask"/>
                 <rect x="365" y="38" width="230" height="64" rx="8" class="arch-c-ce" stroke-width="1.5"/>
-                <rect x="556" y="45" width="29" height="15" rx="3" class="arch-tag-ce"/>
-                <text x="570.5" y="56" class="arch-tag-text-ce" font-size="8" font-weight="700" text-anchor="middle">CE</text>
-                <text x="382" y="62" class="arch-t-title" font-size="12" font-weight="650">Platform Control Plane</text>
-                <text x="382" y="79" class="arch-t-sub" font-size="9">Catalog · Policy Sync · State</text>
+                <text x="382" y="64" class="arch-t-title" font-size="12" font-weight="650">Platform Control Plane</text>
+                <text x="382" y="82" class="arch-t-sub" font-size="9">Catalog · Policy Sync · State</text>
               </g>
               <g class="arch-node arch-ee" id="node-enterprise-iam">
                 <rect x="615" y="38" width="230" height="64" rx="8" class="arch-mask"/>
                 <rect x="615" y="38" width="230" height="64" rx="8" class="arch-c-ee" stroke-width="1.5"/>
-                <rect x="806" y="45" width="29" height="15" rx="3" class="arch-tag-ee"/>
-                <text x="820.5" y="56" class="arch-tag-text-ee" font-size="8" font-weight="700" text-anchor="middle">EE</text>
-                <text x="632" y="62" class="arch-t-title" font-size="12" font-weight="650">Enterprise IAM &amp; SSO</text>
-                <text x="632" y="79" class="arch-t-sub" font-size="9">Keycloak · Okta · RBAC Mapping</text>
+                <text x="632" y="64" class="arch-t-title" font-size="12" font-weight="650">Enterprise IAM &amp; SSO</text>
+                <text x="632" y="82" class="arch-t-sub" font-size="9">Keycloak · Okta · RBAC Mapping</text>
               </g>
               <g class="arch-node arch-ee" id="node-audit-observability">
                 <rect x="865" y="38" width="240" height="64" rx="8" class="arch-mask"/>
                 <rect x="865" y="38" width="240" height="64" rx="8" class="arch-c-ee" stroke-width="1.5"/>
-                <rect x="1066" y="45" width="29" height="15" rx="3" class="arch-tag-ee"/>
-                <text x="1080.5" y="56" class="arch-tag-text-ee" font-size="8" font-weight="700" text-anchor="middle">EE</text>
-                <text x="882" y="62" class="arch-t-title" font-size="12" font-weight="650">Audit &amp; Observability</text>
-                <text x="882" y="79" class="arch-t-sub" font-size="9">OpenTelemetry · ClickHouse Logs</text>
+                <text x="882" y="64" class="arch-t-title" font-size="12" font-weight="650">Audit &amp; Observability</text>
+                <text x="882" y="82" class="arch-t-sub" font-size="9">OpenTelemetry · ClickHouse Logs</text>
               </g>
               <g class="arch-node arch-ext" id="node-bots">
                 <rect x="40" y="150" width="220" height="58" rx="8" class="arch-mask"/>
                 <rect x="40" y="150" width="220" height="58" rx="8" class="arch-c-ext" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-cyan" transform="translate(52 163) scale(0.7)">
+                <g class="arch-sigil arch-sigil-slate" transform="translate(52 163) scale(0.7)">
                   <rect x="2" y="4" width="16" height="12" rx="3"/>
                   <circle cx="6" cy="10" r="1.5"/>
                   <circle cx="14" cy="10" r="1.5"/>
@@ -139,7 +127,7 @@
               <g class="arch-node arch-ext" id="node-agents">
                 <rect x="40" y="226" width="220" height="58" rx="8" class="arch-mask"/>
                 <rect x="40" y="226" width="220" height="58" rx="8" class="arch-c-ext" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-cyan" transform="translate(52 239) scale(0.7)">
+                <g class="arch-sigil arch-sigil-slate" transform="translate(52 239) scale(0.7)">
                   <path d="M8 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8ZM3 16c0-2.8 2.2-5 5-5s5 2.2 5 5"/>
                   <circle cx="15" cy="7" r="2"/>
                 </g>
@@ -149,7 +137,7 @@
               <g class="arch-node arch-ext" id="node-apps">
                 <rect x="40" y="312" width="220" height="58" rx="8" class="arch-mask"/>
                 <rect x="40" y="312" width="220" height="58" rx="8" class="arch-c-ext" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-rose" transform="translate(52 325) scale(0.7)">
+                <g class="arch-sigil arch-sigil-slate" transform="translate(52 325) scale(0.7)">
                   <rect x="2" y="3" width="16" height="14" rx="2"/>
                   <path d="M6 8h8M6 12h5"/>
                 </g>
@@ -159,7 +147,7 @@
               <g class="arch-node arch-ext" id="node-workstations">
                 <rect x="40" y="398" width="220" height="58" rx="8" class="arch-mask"/>
                 <rect x="40" y="398" width="220" height="58" rx="8" class="arch-c-ext" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-purple" transform="translate(52 411) scale(0.7)">
+                <g class="arch-sigil arch-sigil-slate" transform="translate(52 411) scale(0.7)">
                   <rect x="2" y="2" width="16" height="12" rx="2"/>
                   <path d="M6 18h8M10 14v4"/>
                 </g>
@@ -169,8 +157,6 @@
               <g class="arch-node arch-ce arch-pulse-glow" id="node-ai-mcp-gw">
                 <rect x="460" y="150" width="280" height="134" rx="9" class="arch-mask"/>
                 <rect x="460" y="150" width="280" height="134" rx="9" class="arch-c-ce" stroke-width="2"/>
-                <rect x="696" y="160" width="34" height="17" rx="3.5" class="arch-tag-ce"/>
-                <text x="713" y="172.5" class="arch-tag-text-ce" font-size="9" font-weight="700" text-anchor="middle">CE</text>
                 <text x="480" y="182" class="arch-t-title-lg" font-size="14" font-weight="700">AI &amp; MCP Gateway</text>
                 <text x="480" y="201" class="arch-t-sub" font-size="9.5">Prompt Guardrails · Model Routing</text>
                 <path d="M 480 216 L 720 216" stroke="rgba(56, 189, 248, 0.15)" stroke-width="1"/>
@@ -181,20 +167,16 @@
               <g class="arch-node arch-ee" id="node-api-gw">
                 <rect x="460" y="304" width="280" height="74" rx="9" class="arch-mask"/>
                 <rect x="460" y="304" width="280" height="74" rx="9" class="arch-c-ee" stroke-width="1.5"/>
-                <rect x="696" y="313" width="34" height="17" rx="3.5" class="arch-tag-ee"/>
-                <text x="713" y="325.5" class="arch-tag-text-ee" font-size="9" font-weight="700" text-anchor="middle">EE</text>
-                <text x="480" y="332" class="arch-t-title" font-size="13" font-weight="650">Enterprise API Gateway</text>
-                <text x="480" y="350" class="arch-t-sub" font-size="9.5">Reverse Proxy · Rate Limits · Token Auth</text>
-                <text x="480" y="366" class="arch-t-sub-dim" font-size="8.5">Secure Ingress for Enterprise Microservices</text>
+                <text x="480" y="334" class="arch-t-title" font-size="13" font-weight="650">Enterprise API Gateway</text>
+                <text x="480" y="352" class="arch-t-sub" font-size="9.5">Reverse Proxy · Rate Limits · Token Auth</text>
+                <text x="480" y="367" class="arch-t-sub-dim" font-size="8.5">Secure Ingress for Enterprise Microservices</text>
               </g>
               <g class="arch-node arch-ee" id="node-access-proxy">
                 <rect x="460" y="398" width="280" height="74" rx="9" class="arch-mask"/>
                 <rect x="460" y="398" width="280" height="74" rx="9" class="arch-c-ee" stroke-width="1.5"/>
-                <rect x="696" y="407" width="34" height="17" rx="3.5" class="arch-tag-ee"/>
-                <text x="713" y="419.5" class="arch-tag-text-ee" font-size="9" font-weight="700" text-anchor="middle">EE</text>
-                <text x="480" y="426" class="arch-t-title" font-size="13" font-weight="650">Zero-Trust Access Proxy</text>
-                <text x="480" y="444" class="arch-t-sub" font-size="9.5">Private Egress · VPC Boundary Security</text>
-                <text x="480" y="460" class="arch-t-sub-dim" font-size="8.5">Encrypted WireGuard / mTLS Tunneling</text>
+                <text x="480" y="428" class="arch-t-title" font-size="13" font-weight="650">Zero-Trust Access Proxy</text>
+                <text x="480" y="446" class="arch-t-sub" font-size="9.5">Private Egress · VPC Boundary Security</text>
+                <text x="480" y="461" class="arch-t-sub-dim" font-size="8.5">Encrypted WireGuard / mTLS Tunneling</text>
               </g>
               <g class="arch-node arch-ext" id="node-upstream-models">
                 <rect x="865" y="168" width="240" height="76" rx="8" class="arch-mask"/>
@@ -230,12 +212,12 @@
               <path d="M 260 179 L 360 179 Q 380 179 380 195 L 380 205 Q 380 217 400 217 L 460 217" class="arch-stream-cyan" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
               <path d="M 260 255 L 360 255 Q 380 255 380 239 L 380 229 Q 380 217 400 217 L 460 217" class="arch-stream-cyan" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
               <path d="M 740 217 L 865 217" class="arch-stream-cyan" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
-              <path d="M 260 341 L 460 341" class="arch-stream-rose" stroke-width="2.4" marker-end="url(#arch-arrow-rose)"/>
-              <path d="M 740 341 L 865 341" class="arch-stream-rose" stroke-width="2.4" marker-end="url(#arch-arrow-rose)"/>
-              <path d="M 260 427 L 460 427" class="arch-stream-purple" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
-              <path d="M 740 427 L 865 427" class="arch-stream-purple" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 260 341 L 460 341" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 740 341 L 865 341" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 260 427 L 460 427" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 740 427 L 865 427" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
               <path d="M 480 102 L 480 150" class="arch-stream-sync" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
-              <path d="M 650 102 L 650 150" class="arch-stream-sync" stroke-width="1.8" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 650 102 L 650 150" class="arch-stream-sync-violet" stroke-width="1.8" marker-end="url(#arch-arrow-violet)"/>
               <path d="M 740 185 Q 790 185 790 130 L 790 85 Q 790 70 825 70 L 865 70" class="arch-stream-telemetry" stroke-width="1.8" marker-end="url(#arch-arrow-violet)"/>
               <g>
                 <rect x="285" y="162" width="75" height="16" rx="4" class="arch-pill-bg"/>
@@ -251,28 +233,28 @@
               </g>
               <g>
                 <rect x="310" y="333" width="85" height="16" rx="4" class="arch-pill-bg"/>
-                <text x="352.5" y="345" class="arch-pill-rose" font-size="7.5" font-weight="650" text-anchor="middle">mTLS API Call</text>
+                <text x="352.5" y="345" class="arch-pill-violet" font-size="7.5" font-weight="650" text-anchor="middle">mTLS API Call</text>
               </g>
               <g>
                 <rect x="305" y="419" width="95" height="16" rx="4" class="arch-pill-bg"/>
-                <text x="352.5" y="431" class="arch-pill-purple" font-size="7.5" font-weight="650" text-anchor="middle">Zero-Trust Tunnel</text>
+                <text x="352.5" y="431" class="arch-pill-violet" font-size="7.5" font-weight="650" text-anchor="middle">Zero-Trust Tunnel</text>
               </g>
             </svg>
           </div>
           <p class="architecture-scroll-hint" aria-hidden="true">Scroll horizontally to explore topology &rarr;</p>
         </div>
         <div class="architecture-pillars">
-          <article class="architecture-pillar pillar-control">
-            <h3>Control Plane</h3>
-            <p>Centrally govern policies, identities, and resource catalogs with PostgreSQL and IAM integration.</p>
+          <article class="architecture-pillar pillar-ce">
+            <h3>Community Edition (CE)</h3>
+            <p>Open-source foundation featuring the AI &amp; MCP Gateway, unified resource catalog, and real-time policy enforcement for local and cloud environments.</p>
           </article>
-          <article class="architecture-pillar pillar-gateway">
-            <h3>Multi-Modal Gateways</h3>
-            <p>Unified enforcement for LLM routing, MCP tool servers, enterprise APIs, and secure outbound connections.</p>
+          <article class="architecture-pillar pillar-ee">
+            <h3>Enterprise Edition (EE)</h3>
+            <p>Production-grade security with Enterprise IAM/SSO integration, reverse-proxy API Gateway, Zero-Trust Access Proxy, and ClickHouse audit telemetry.</p>
           </article>
-          <article class="architecture-pillar pillar-observability">
-            <h3>Full Observability</h3>
-            <p>End-to-end distributed telemetry via OpenTelemetry directly into ClickHouse for full auditability.</p>
+          <article class="architecture-pillar pillar-eco">
+            <h3>Bots &amp; Agents Ready</h3>
+            <p>First-class ingress for Slack and Microsoft Teams bots, developer IDE copilots (Cursor, Claude Code), and autonomous multi-agent microservices.</p>
           </article>
         </div>
       </section>
