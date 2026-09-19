@@ -65,331 +65,264 @@
           <div class="architecture-svg-wrapper">
             <svg class="architecture-svg" viewBox="0 0 1200 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GenioOne Enterprise AI and API Architecture">
               <defs>
-                <marker id="arch-arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+                <marker id="arch-arrowhead" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+                  <polygon points="0 0, 9 3, 0 6" fill="#64748b" />
                 </marker>
-                <marker id="arch-arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#38bdf8" />
+                <marker id="arch-arrowhead-emphasis" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+                  <polygon points="0 0, 9 3, 0 6" fill="#38bdf8" />
                 </marker>
-                <marker id="arch-arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#fb7185" />
+                <marker id="arch-arrowhead-security" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+                  <polygon points="0 0, 9 3, 0 6" fill="#fb7185" />
                 </marker>
-                <marker id="arch-arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa" />
+                <marker id="arch-arrowhead-dashed" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+                  <polygon points="0 0, 9 3, 0 6" fill="#a78bfa" />
                 </marker>
                 <pattern id="arch-grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" stroke="rgba(234, 240, 255, 0.04)" stroke-width="0.5"/>
+                  <path d="M 40 0 L 0 0 0 40" stroke="rgba(234, 240, 255, 0.035)" stroke-width="0.5"/>
                 </pattern>
               </defs>
               <rect width="100%" height="100%" fill="url(#arch-grid-pattern)" />
-              <rect x="2" y="18" width="466" height="174" rx="12" class="arch-region" stroke-width="1"/>
-              <rect x="14" y="36" width="442" height="146" rx="8" class="arch-group arch-group-control" stroke-width="1"/>
-              <rect x="242" y="406" width="216" height="114" rx="12" class="arch-region" stroke-width="1"/>
-              <rect x="474" y="20" width="282" height="508" rx="12" class="arch-region" stroke-width="1"/>
-              <rect x="488" y="38" width="254" height="476" rx="8" class="arch-group" stroke-width="1"/>
-              <rect x="762" y="18" width="426" height="132" rx="12" class="arch-region" stroke-width="1"/>
-              <rect x="774" y="36" width="402" height="102" rx="8" class="arch-group arch-group-audit" stroke-width="1"/>
-              <path d="M 220 86 L 190 86" class="arch-edge-emphasis" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
-              <path d="M 450 86 L 500 86" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 335 112 L 335 120" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 120 210 L 120 186 L 105 186 L 105 162" class="arch-edge-emphasis" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
-              <path d="M 590 112 L 590 116.5 Q 590 121 594.5 121 L 610.5 121 Q 615 121 615 125.5 L 615 130" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 615 210 L 615 188 Q 615 180 623 180 L 740 180 Q 748 180 748 172 L 748 94 Q 748 86 756 86 L 780 86" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 615 320 L 615 308 Q 615 300 623 300 L 740 300 Q 748 300 748 292 L 748 244 Q 748 236 748 228 L 748 94 Q 748 86 756 86 L 780 86" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 615 430 L 615 418 Q 615 410 623 410 L 740 410 Q 748 410 748 402 L 748 354 Q 748 346 748 338 L 748 244 Q 748 236 748 228 L 748 94 Q 748 86 756 86 L 780 86" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 950 86 L 990 86" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 335 60 L 335 16 Q 335 8 343 8 L 1072 8 Q 1080 8 1080 16 L 1080 60" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 220 236 L 500 236" class="arch-edge-emphasis" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
-              <path d="M 730 236 L 970 236" class="arch-edge-security" stroke-width="1.5" marker-end="url(#arch-arrowhead-security)"/>
-              <path d="M 220 346 L 500 346" class="arch-edge-emphasis" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
-              <path d="M 730 346 L 970 346" class="arch-edge-security" stroke-width="1.5" marker-end="url(#arch-arrowhead-security)"/>
-              <path d="M 220 456 L 260 456" class="arch-edge-emphasis" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
-              <path d="M 440 456 L 500 456" class="arch-edge-emphasis" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
-              <path d="M 350 430 L 350 418 Q 350 410 358 410 L 740 410 Q 748 410 748 402 L 748 354 Q 748 346 748 338 L 748 244 Q 748 236 748 228 L 748 94 Q 748 86 756 86 L 780 86" class="arch-edge-dashed" stroke-width="1.5" marker-end="url(#arch-arrowhead-dashed)"/>
-              <path d="M 730 456 L 970 456" class="arch-edge-security" stroke-width="1.5" marker-end="url(#arch-arrowhead-security)"/>
+              <rect x="14" y="28" width="442" height="154" rx="10" class="arch-region arch-region-control" stroke-width="1"/>
+              <rect x="484" y="28" width="262" height="490" rx="10" class="arch-region arch-region-gateway" stroke-width="1"/>
+              <rect x="770" y="28" width="414" height="94" rx="10" class="arch-region arch-region-audit" stroke-width="1"/>
+              <g>
+                <rect x="24" y="20" width="124" height="16" rx="4" class="arch-mask"/>
+                <text x="86" y="32" class="arch-t-badge-control" font-size="8.5" font-weight="700" letter-spacing="0.06em" text-anchor="middle">CONTROL PLANE</text>
+              </g>
+              <g>
+                <rect x="494" y="20" width="164" height="16" rx="4" class="arch-mask"/>
+                <text x="576" y="32" class="arch-t-badge-gateway" font-size="8.5" font-weight="700" letter-spacing="0.06em" text-anchor="middle">MULTI-MODAL GATEWAYS</text>
+              </g>
+              <g>
+                <rect x="780" y="20" width="124" height="16" rx="4" class="arch-mask"/>
+                <text x="842" y="32" class="arch-t-badge-audit" font-size="8.5" font-weight="700" letter-spacing="0.06em" text-anchor="middle">OBSERVABILITY</text>
+              </g>
+              <path d="M 220 85 L 190 85" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 450 85 L 500 85" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 335 110 L 335 124" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 120 210 L 120 186 L 105 186 L 105 168" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 590 110 L 590 117 Q 590 124 597 124 L 610 124 Q 615 124 615 128 L 615 130" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 615 210 L 615 188 Q 615 180 623 180 L 740 180 Q 748 180 748 172 L 748 85 L 780 85" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 615 320 L 615 308 Q 615 300 623 300 L 740 300 Q 748 300 748 292 L 748 85 L 780 85" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 615 430 L 615 418 Q 615 410 623 410 L 740 410 Q 748 410 748 402 L 748 85 L 780 85" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 950 85 L 990 85" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 335 60 L 335 14 Q 335 8 343 8 L 1072 8 Q 1080 8 1080 14 L 1080 60" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 220 235 L 500 235" class="arch-base-line" stroke-width="2"/>
+              <path d="M 730 235 L 970 235" class="arch-base-line" stroke-width="2"/>
+              <path d="M 220 345 L 500 345" class="arch-base-line" stroke-width="2"/>
+              <path d="M 730 345 L 970 345" class="arch-base-line" stroke-width="2"/>
+              <path d="M 220 455 L 260 455" class="arch-base-line" stroke-width="2"/>
+              <path d="M 440 455 L 500 455" class="arch-base-line" stroke-width="2"/>
+              <path d="M 350 430 L 350 410 L 748 410 L 748 85 L 780 85" class="arch-base-line" stroke-width="1.5"/>
+              <path d="M 730 455 L 970 455" class="arch-base-line" stroke-width="2"/>
+              <path d="M 220 85 L 190 85" class="arch-flow-sync" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 450 85 L 500 85" class="arch-flow-sync" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 335 110 L 335 124" class="arch-flow-sync" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 120 210 L 120 186 L 105 186 L 105 168" class="arch-flow-cyan-fast" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 590 110 L 590 117 Q 590 124 597 124 L 610 124 Q 615 124 615 128 L 615 130" class="arch-flow-sync" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 615 210 L 615 188 Q 615 180 623 180 L 740 180 Q 748 180 748 172 L 748 85 L 780 85" class="arch-flow-telemetry" stroke-width="1.8" marker-end="url(#arch-arrowhead-dashed)"/>
+              <path d="M 615 320 L 615 308 Q 615 300 623 300 L 740 300 Q 748 300 748 292 L 748 85 L 780 85" class="arch-flow-telemetry" stroke-width="1.8" marker-end="url(#arch-arrowhead-dashed)"/>
+              <path d="M 615 430 L 615 418 Q 615 410 623 410 L 740 410 Q 748 410 748 402 L 748 85 L 780 85" class="arch-flow-telemetry" stroke-width="1.8" marker-end="url(#arch-arrowhead-dashed)"/>
+              <path d="M 950 85 L 990 85" class="arch-flow-telemetry" stroke-width="2" marker-end="url(#arch-arrowhead-dashed)"/>
+              <path d="M 335 60 L 335 14 Q 335 8 343 8 L 1072 8 Q 1080 8 1080 14 L 1080 60" class="arch-flow-sync" stroke-width="1.8" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 220 235 L 500 235" class="arch-flow-cyan-fast" stroke-width="2.2" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 730 235 L 970 235" class="arch-flow-cyan-fast" stroke-width="2.2" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 220 345 L 500 345" class="arch-flow-rose-fast" stroke-width="2.2" marker-end="url(#arch-arrowhead-security)"/>
+              <path d="M 730 345 L 970 345" class="arch-flow-rose-fast" stroke-width="2.2" marker-end="url(#arch-arrowhead-security)"/>
+              <path d="M 220 455 L 260 455" class="arch-flow-cyan-fast" stroke-width="2" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 440 455 L 500 455" class="arch-flow-cyan-fast" stroke-width="2" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <path d="M 350 430 L 350 410 L 748 410 L 748 85 L 780 85" class="arch-flow-telemetry" stroke-width="1.8" marker-end="url(#arch-arrowhead-dashed)"/>
+              <path d="M 730 455 L 970 455" class="arch-flow-cyan-fast" stroke-width="2.2" marker-end="url(#arch-arrowhead-emphasis)"/>
+              <g>
+                <rect x="306" y="226" width="112" height="18" rx="4" class="arch-flow-badge-bg"/>
+                <text x="362" y="239" class="arch-flow-badge-cyan" font-size="8.5" font-weight="600" text-anchor="middle">Prompt &amp; MCP Flow</text>
+              </g>
+              <g>
+                <rect x="312" y="336" width="100" height="18" rx="4" class="arch-flow-badge-bg"/>
+                <text x="362" y="349" class="arch-flow-badge-rose" font-size="8.5" font-weight="600" text-anchor="middle">API Ingress Flow</text>
+              </g>
+              <g>
+                <rect x="422" y="446" width="96" height="18" rx="4" class="arch-flow-badge-bg"/>
+                <text x="470" y="459" class="arch-flow-badge-cyan" font-size="8.5" font-weight="600" text-anchor="middle">Zero-Trust Egress</text>
+              </g>
+              <g>
+                <rect x="844" y="76" width="92" height="18" rx="4" class="arch-flow-badge-bg"/>
+                <text x="890" y="89" class="arch-flow-badge-purple" font-size="8.5" font-weight="600" text-anchor="middle">OTel Stream</text>
+              </g>
               <g class="arch-node" id="node-postgres">
-                <rect x="20" y="60" width="170" height="52" rx="6" class="arch-mask"/>
-                <rect x="20" y="60" width="170" height="52" rx="6" class="arch-c-database" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-db" transform="translate(26 66) scale(0.6875)">
+                <rect x="20" y="60" width="170" height="50" rx="7" class="arch-mask"/>
+                <rect x="20" y="60" width="170" height="50" rx="7" class="arch-c-database" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-db" transform="translate(28 67) scale(0.7)">
                   <ellipse cx="8" cy="4" rx="5" ry="2"/>
                   <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
                 </g>
-                <text x="105" y="80" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Governance State</text>
-                <text x="105" y="92" class="arch-t-muted" font-size="8.5" text-anchor="middle">Policy · Routing · Config</text>
-                <text x="105" y="103" class="arch-t-database" font-size="7.5" text-anchor="middle">PostgreSQL</text>
+                <text x="105" y="81" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Governance Database</text>
+                <text x="105" y="97" class="arch-t-muted" font-size="8.5" text-anchor="middle">PostgreSQL · Policy &amp; State</text>
               </g>
               <g class="arch-node" id="node-self_service_portal">
-                <rect x="20" y="120" width="170" height="42" rx="6" class="arch-mask"/>
-                <rect x="20" y="120" width="170" height="42" rx="6" class="arch-c-frontend" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-fe" transform="translate(26 126) scale(0.6875)">
+                <rect x="20" y="124" width="170" height="44" rx="7" class="arch-mask"/>
+                <rect x="20" y="124" width="170" height="44" rx="7" class="arch-c-frontend" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-fe" transform="translate(28 131) scale(0.7)">
                   <rect x="2" y="2.5" width="12" height="11" rx="1.5"/>
                   <path d="M2 6h12M5 4.25h.01M7.5 4.25h.01"/>
                 </g>
-                <text x="105" y="138" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Access Portal</text>
-                <text x="105" y="150" class="arch-t-muted" font-size="8.5" text-anchor="middle">User &amp; Agent Self-Service</text>
+                <text x="105" y="143" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Access Portal</text>
+                <text x="105" y="157" class="arch-t-muted" font-size="8.5" text-anchor="middle">Self-Service &amp; Agent Login</text>
               </g>
-              <g class="arch-node" id="node-platform_cp">
-                <rect x="220" y="60" width="230" height="52" rx="6" class="arch-mask"/>
-                <rect x="220" y="60" width="230" height="52" rx="6" class="arch-c-backend" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-be" transform="translate(226 66) scale(0.6875)">
+              <g class="arch-node arch-pulse-control" id="node-platform_cp">
+                <rect x="220" y="60" width="230" height="50" rx="7" class="arch-mask"/>
+                <rect x="220" y="60" width="230" height="50" rx="7" class="arch-c-backend" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-be" transform="translate(228 67) scale(0.7)">
                   <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
                 </g>
-                <text x="335" y="80" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Platform Control Plane</text>
-                <text x="335" y="92" class="arch-t-muted" font-size="8.5" text-anchor="middle">Catalogs · Policies · Sync</text>
-                <text x="335" y="103" class="arch-t-backend" font-size="7.5" text-anchor="middle">genio-platform</text>
+                <text x="335" y="81" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Platform Control Plane</text>
+                <text x="335" y="97" class="arch-t-muted" font-size="8.5" text-anchor="middle">Catalog &amp; Policy Orchestration</text>
               </g>
               <g class="arch-node" id="node-keycloak">
-                <rect x="220" y="120" width="230" height="42" rx="6" class="arch-mask"/>
-                <rect x="220" y="120" width="230" height="42" rx="6" class="arch-c-security" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-sec" transform="translate(226 126) scale(0.6875)">
+                <rect x="220" y="124" width="230" height="44" rx="7" class="arch-mask"/>
+                <rect x="220" y="124" width="230" height="44" rx="7" class="arch-c-security" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-sec" transform="translate(228 131) scale(0.7)">
                   <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
                   <path d="m5.8 8 1.5 1.5 3-3"/>
                 </g>
-                <text x="335" y="138" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Identity &amp; Access (IAM)</text>
-                <text x="335" y="150" class="arch-t-muted" font-size="8.5" text-anchor="middle">AuthN · AuthZ · RBAC</text>
+                <text x="335" y="143" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Identity &amp; IAM</text>
+                <text x="335" y="157" class="arch-t-muted" font-size="8.5" text-anchor="middle">SSO · RBAC · Tokens</text>
               </g>
               <g class="arch-node" id="node-gateway_runtime">
-                <rect x="500" y="60" width="180" height="52" rx="6" class="arch-mask"/>
-                <rect x="500" y="60" width="180" height="52" rx="6" class="arch-c-backend" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-be" transform="translate(506 66) scale(0.6875)">
+                <rect x="500" y="60" width="180" height="50" rx="7" class="arch-mask"/>
+                <rect x="500" y="60" width="180" height="50" rx="7" class="arch-c-backend" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-be" transform="translate(508 67) scale(0.7)">
                   <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
                 </g>
-                <text x="590" y="80" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Gateway Runtime</text>
-                <text x="590" y="92" class="arch-t-muted" font-size="8.5" text-anchor="middle">Reconcile · Sync · Health</text>
-                <text x="590" y="103" class="arch-t-backend" font-size="7.5" text-anchor="middle">genio-gateway</text>
+                <text x="590" y="81" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Gateway Runtime</text>
+                <text x="590" y="97" class="arch-t-muted" font-size="8.5" text-anchor="middle">Sync Engine &amp; Health</text>
               </g>
               <g class="arch-node" id="node-otel_collector">
-                <rect x="780" y="60" width="170" height="52" rx="6" class="arch-mask"/>
-                <rect x="780" y="60" width="170" height="52" rx="6" class="arch-c-backend" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-be" transform="translate(786 66) scale(0.6875)">
+                <rect x="780" y="60" width="170" height="50" rx="7" class="arch-mask"/>
+                <rect x="780" y="60" width="170" height="50" rx="7" class="arch-c-backend" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-be" transform="translate(788 67) scale(0.7)">
                   <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
                 </g>
-                <text x="865" y="80" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Telemetry Collector</text>
-                <text x="865" y="92" class="arch-t-muted" font-size="8.5" text-anchor="middle">Metrics · Traces · Logs</text>
-                <text x="865" y="103" class="arch-t-backend" font-size="7.5" text-anchor="middle">OpenTelemetry</text>
+                <text x="865" y="81" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">OpenTelemetry</text>
+                <text x="865" y="97" class="arch-t-muted" font-size="8.5" text-anchor="middle">Metrics · Traces · Logs</text>
               </g>
               <g class="arch-node" id="node-module_reconcilers">
-                <rect x="500" y="130" width="230" height="42" rx="6" class="arch-mask"/>
-                <rect x="500" y="130" width="230" height="42" rx="6" class="arch-c-backend" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-be" transform="translate(506 136) scale(0.6875)">
+                <rect x="500" y="124" width="230" height="44" rx="7" class="arch-mask"/>
+                <rect x="500" y="124" width="230" height="44" rx="7" class="arch-c-backend" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-be" transform="translate(508 131) scale(0.7)">
                   <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
                 </g>
-                <text x="615" y="148" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Module Reconcilers</text>
-                <text x="615" y="160" class="arch-t-muted" font-size="8.5" text-anchor="middle">Dynamic Policy Sync &amp; Hooks</text>
+                <text x="615" y="143" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Policy Engine</text>
+                <text x="615" y="157" class="arch-t-muted" font-size="8.5" text-anchor="middle">Rule Enforcement &amp; Hooks</text>
               </g>
               <g class="arch-node" id="node-clickhouse">
-                <rect x="990" y="60" width="180" height="52" rx="6" class="arch-mask"/>
-                <rect x="990" y="60" width="180" height="52" rx="6" class="arch-c-database" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-db" transform="translate(996 66) scale(0.6875)">
+                <rect x="990" y="60" width="180" height="50" rx="7" class="arch-mask"/>
+                <rect x="990" y="60" width="180" height="50" rx="7" class="arch-c-database" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-db" transform="translate(998 67) scale(0.7)">
                   <ellipse cx="8" cy="4" rx="5" ry="2"/>
                   <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
                 </g>
-                <text x="1080" y="80" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Audit &amp; Analytics</text>
-                <text x="1080" y="92" class="arch-t-muted" font-size="8.5" text-anchor="middle">Audit Trail · Usage Logs</text>
-                <text x="1080" y="103" class="arch-t-database" font-size="7.5" text-anchor="middle">ClickHouse</text>
+                <text x="1080" y="81" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Audit &amp; Analytics</text>
+                <text x="1080" y="97" class="arch-t-muted" font-size="8.5" text-anchor="middle">ClickHouse · Fast Audit Trail</text>
               </g>
               <g class="arch-node" id="node-company_clients">
-                <rect x="20" y="210" width="200" height="52" rx="6" class="arch-mask"/>
-                <rect x="20" y="210" width="200" height="52" rx="6" class="arch-c-external" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-ext" transform="translate(26 216) scale(0.6875)">
+                <rect x="20" y="210" width="200" height="50" rx="7" class="arch-mask"/>
+                <rect x="20" y="210" width="200" height="50" rx="7" class="arch-c-external" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-ext" transform="translate(28 217) scale(0.7)">
                   <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
                   <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
                 </g>
-                <text x="120" y="234" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Users &amp; AI Agents</text>
-                <text x="120" y="247" class="arch-t-muted" font-size="8.5" text-anchor="middle">Governed Request Ingress</text>
+                <text x="120" y="231" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Users &amp; AI Agents</text>
+                <text x="120" y="247" class="arch-t-muted" font-size="8.5" text-anchor="middle">Authorized Client Workloads</text>
               </g>
-              <g class="arch-node" id="node-ai_mcp_gateway">
-                <rect x="500" y="210" width="230" height="52" rx="6" class="arch-mask"/>
-                <rect x="500" y="210" width="230" height="52" rx="6" class="arch-c-security" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-sec" transform="translate(506 216) scale(0.6875)">
+              <g class="arch-node arch-pulse-gateway" id="node-ai_mcp_gateway">
+                <rect x="500" y="210" width="230" height="50" rx="7" class="arch-mask"/>
+                <rect x="500" y="210" width="230" height="50" rx="7" class="arch-c-security" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-sec" transform="translate(508 217) scale(0.7)">
                   <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
                   <path d="m5.8 8 1.5 1.5 3-3"/>
                 </g>
-                <text x="615" y="231" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">AI &amp; MCP Gateway</text>
-                <text x="615" y="243" class="arch-t-muted" font-size="8.5" text-anchor="middle">Prompt Filter · Tool Router</text>
-                <text x="615" y="253" class="arch-t-security" font-size="7.5" text-anchor="middle">AI Ingress</text>
+                <text x="615" y="231" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">AI &amp; MCP Gateway</text>
+                <text x="615" y="247" class="arch-t-muted" font-size="8.5" text-anchor="middle">Prompt Filter · Tool Router</text>
               </g>
               <g class="arch-node" id="node-company_ai_mcp">
-                <rect x="970" y="210" width="210" height="52" rx="6" class="arch-mask"/>
-                <rect x="970" y="210" width="210" height="52" rx="6" class="arch-c-external" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-ext" transform="translate(976 216) scale(0.6875)">
+                <rect x="970" y="210" width="210" height="50" rx="7" class="arch-mask"/>
+                <rect x="970" y="210" width="210" height="50" rx="7" class="arch-c-external" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-ext" transform="translate(978 217) scale(0.7)">
                   <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
                   <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
                 </g>
-                <text x="1075" y="234" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">AI Models &amp; Tools</text>
-                <text x="1075" y="247" class="arch-t-muted" font-size="8.5" text-anchor="middle">LLMs · MCP Servers · Tools</text>
+                <text x="1075" y="231" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">AI Models &amp; Tools</text>
+                <text x="1075" y="247" class="arch-t-muted" font-size="8.5" text-anchor="middle">LLMs · MCP Tool Servers</text>
               </g>
               <g class="arch-node" id="node-api_consumers">
-                <rect x="20" y="320" width="200" height="52" rx="6" class="arch-mask"/>
-                <rect x="20" y="320" width="200" height="52" rx="6" class="arch-c-external" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-ext" transform="translate(26 326) scale(0.6875)">
+                <rect x="20" y="320" width="200" height="50" rx="7" class="arch-mask"/>
+                <rect x="20" y="320" width="200" height="50" rx="7" class="arch-c-external" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-ext" transform="translate(28 327) scale(0.7)">
                   <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
                   <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
                 </g>
-                <text x="120" y="344" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">API Consumers</text>
-                <text x="120" y="357" class="arch-t-muted" font-size="8.5" text-anchor="middle">Apps · Microservices · Workloads</text>
+                <text x="120" y="341" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">API Consumers</text>
+                <text x="120" y="357" class="arch-t-muted" font-size="8.5" text-anchor="middle">Apps · Workloads · Partners</text>
               </g>
               <g class="arch-node" id="node-api_management_gateway">
-                <rect x="500" y="320" width="230" height="52" rx="6" class="arch-mask"/>
-                <rect x="500" y="320" width="230" height="52" rx="6" class="arch-c-security" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-sec" transform="translate(506 326) scale(0.6875)">
+                <rect x="500" y="320" width="230" height="50" rx="7" class="arch-mask"/>
+                <rect x="500" y="320" width="230" height="50" rx="7" class="arch-c-security" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-sec" transform="translate(508 327) scale(0.7)">
                   <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
                   <path d="m5.8 8 1.5 1.5 3-3"/>
                 </g>
-                <text x="615" y="341" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">API Gateway</text>
-                <text x="615" y="353" class="arch-t-muted" font-size="8.5" text-anchor="middle">Auth · Rate Limits · Reverse Proxy</text>
-                <text x="615" y="363" class="arch-t-security" font-size="7.5" text-anchor="middle">API Ingress</text>
+                <text x="615" y="341" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">API Gateway</text>
+                <text x="615" y="357" class="arch-t-muted" font-size="8.5" text-anchor="middle">Rate Limits · Auth · Reverse Proxy</text>
               </g>
               <g class="arch-node" id="node-enterprise_apis">
-                <rect x="970" y="320" width="210" height="52" rx="6" class="arch-mask"/>
-                <rect x="970" y="320" width="210" height="52" rx="6" class="arch-c-external" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-ext" transform="translate(976 326) scale(0.6875)">
+                <rect x="970" y="320" width="210" height="50" rx="7" class="arch-mask"/>
+                <rect x="970" y="320" width="210" height="50" rx="7" class="arch-c-external" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-ext" transform="translate(978 327) scale(0.7)">
                   <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
                   <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
                 </g>
-                <text x="1075" y="344" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Enterprise Services</text>
-                <text x="1075" y="357" class="arch-t-muted" font-size="8.5" text-anchor="middle">Internal APIs &amp; Core Business</text>
+                <text x="1075" y="341" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Enterprise Services</text>
+                <text x="1075" y="357" class="arch-t-muted" font-size="8.5" text-anchor="middle">Internal APIs &amp; Core Systems</text>
               </g>
               <g class="arch-node" id="node-outbound_clients">
-                <rect x="20" y="430" width="200" height="52" rx="6" class="arch-mask"/>
-                <rect x="20" y="430" width="200" height="52" rx="6" class="arch-c-external" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-ext" transform="translate(26 436) scale(0.6875)">
+                <rect x="20" y="430" width="200" height="50" rx="7" class="arch-mask"/>
+                <rect x="20" y="430" width="200" height="50" rx="7" class="arch-c-external" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-ext" transform="translate(28 437) scale(0.7)">
                   <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
                   <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
                 </g>
-                <text x="120" y="454" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Endpoints &amp; Network</text>
-                <text x="120" y="467" class="arch-t-muted" font-size="8.5" text-anchor="middle">Developer Machines · VPC</text>
+                <text x="120" y="451" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Workstations &amp; VPC</text>
+                <text x="120" y="467" class="arch-t-muted" font-size="8.5" text-anchor="middle">Developer Environments</text>
               </g>
               <g class="arch-node" id="node-endpoint_runtime">
-                <rect x="260" y="430" width="180" height="52" rx="6" class="arch-mask"/>
-                <rect x="260" y="430" width="180" height="52" rx="6" class="arch-c-backend" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-be" transform="translate(266 436) scale(0.6875)">
+                <rect x="260" y="430" width="180" height="50" rx="7" class="arch-mask"/>
+                <rect x="260" y="430" width="180" height="50" rx="7" class="arch-c-backend" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-be" transform="translate(268 437) scale(0.7)">
                   <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
                 </g>
-                <text x="350" y="451" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Endpoint Client</text>
-                <text x="350" y="463" class="arch-t-muted" font-size="8.5" text-anchor="middle">Transparent Local Proxy</text>
-                <text x="350" y="473" class="arch-t-backend" font-size="7.5" text-anchor="middle">genio-endpoint</text>
+                <text x="350" y="451" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Endpoint Client</text>
+                <text x="350" y="467" class="arch-t-muted" font-size="8.5" text-anchor="middle">Transparent Local Proxy</text>
               </g>
               <g class="arch-node" id="node-access_gateway">
-                <rect x="500" y="430" width="230" height="52" rx="6" class="arch-mask"/>
-                <rect x="500" y="430" width="230" height="52" rx="6" class="arch-c-security" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-sec" transform="translate(506 436) scale(0.6875)">
+                <rect x="500" y="430" width="230" height="50" rx="7" class="arch-mask"/>
+                <rect x="500" y="430" width="230" height="50" rx="7" class="arch-c-security" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-sec" transform="translate(508 437) scale(0.7)">
                   <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
                   <path d="m5.8 8 1.5 1.5 3-3"/>
                 </g>
-                <text x="615" y="451" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">Secure Access Proxy</text>
-                <text x="615" y="463" class="arch-t-muted" font-size="8.5" text-anchor="middle">Zero-Trust Private Egress</text>
-                <text x="615" y="473" class="arch-t-security" font-size="7.5" text-anchor="middle">Access Gateway</text>
+                <text x="615" y="451" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Secure Access Proxy</text>
+                <text x="615" y="467" class="arch-t-muted" font-size="8.5" text-anchor="middle">Zero-Trust Private Egress</text>
               </g>
               <g class="arch-node" id="node-official_providers">
-                <rect x="970" y="430" width="210" height="52" rx="6" class="arch-mask"/>
-                <rect x="970" y="430" width="210" height="52" rx="6" class="arch-c-external" stroke-width="1.5"/>
-                <g class="arch-sigil arch-sigil-ext" transform="translate(976 436) scale(0.6875)">
+                <rect x="970" y="430" width="210" height="50" rx="7" class="arch-mask"/>
+                <rect x="970" y="430" width="210" height="50" rx="7" class="arch-c-external" stroke-width="1.5"/>
+                <g class="arch-sigil arch-sigil-ext" transform="translate(978 437) scale(0.7)">
                   <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
                   <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
                 </g>
-                <text x="1075" y="454" class="arch-t-primary" font-size="11" font-weight="600" text-anchor="middle">External AI &amp; SaaS</text>
+                <text x="1075" y="451" class="arch-t-primary" font-size="11.5" font-weight="650" text-anchor="middle">Cloud AI &amp; SaaS</text>
                 <text x="1075" y="467" class="arch-t-muted" font-size="8.5" text-anchor="middle">OpenAI · Anthropic · Cloud APIs</text>
-              </g>
-              <g>
-                <rect x="175" y="116" width="60" height="14" rx="3" class="arch-mask"/>
-                <text x="205" y="126" class="arch-t-backend" font-size="8" text-anchor="middle">Save State</text>
-              </g>
-              <g>
-                <rect x="440" y="116" width="70" height="14" rx="3" class="arch-mask"/>
-                <text x="475" y="126" class="arch-t-messagebus" font-size="8" text-anchor="middle">Publish Config</text>
-              </g>
-              <g>
-                <rect x="305" y="166" width="60" height="14" rx="3" class="arch-mask"/>
-                <text x="335" y="176" class="arch-t-messagebus" font-size="8" text-anchor="middle">Manage IAM</text>
-              </g>
-              <g>
-                <rect x="65" y="166" width="95" height="14" rx="3" class="arch-mask"/>
-                <text x="112" y="176" class="arch-t-backend" font-size="8" text-anchor="middle">Access / Login</text>
-              </g>
-              <g>
-                <rect x="560" y="116" width="60" height="14" rx="3" class="arch-mask"/>
-                <text x="590" y="126" class="arch-t-messagebus" font-size="8" text-anchor="middle">Apply Config</text>
-              </g>
-              <g>
-                <rect x="605" y="190" width="90" height="14" rx="3" class="arch-mask"/>
-                <text x="650" y="200" class="arch-t-messagebus" font-size="8" text-anchor="middle">OTel Stream</text>
-              </g>
-              <g>
-                <rect x="635" y="290" width="90" height="14" rx="3" class="arch-mask"/>
-                <text x="680" y="300" class="arch-t-messagebus" font-size="8" text-anchor="middle">OTel Export</text>
-              </g>
-              <g>
-                <rect x="635" y="380" width="90" height="14" rx="3" class="arch-mask"/>
-                <text x="680" y="390" class="arch-t-messagebus" font-size="8" text-anchor="middle">OTel Export</text>
-              </g>
-              <g>
-                <rect x="995" y="135" width="90" height="14" rx="3" class="arch-mask"/>
-                <text x="1040" y="145" class="arch-t-messagebus" font-size="8" text-anchor="middle">Store Telemetry</text>
-              </g>
-              <g>
-                <rect x="662" y="0" width="76" height="14" rx="3" class="arch-mask"/>
-                <text x="700" y="10" class="arch-t-messagebus" font-size="8" text-anchor="middle">Query Activity</text>
-              </g>
-              <g>
-                <rect x="295" y="216" width="130" height="14" rx="3" class="arch-mask"/>
-                <text x="360" y="226" class="arch-t-backend" font-size="8" text-anchor="middle">Inference &amp; MCP Requests</text>
-              </g>
-              <g>
-                <rect x="800" y="216" width="100" height="14" rx="3" class="arch-mask"/>
-                <text x="850" y="226" class="arch-t-security" font-size="8" text-anchor="middle">Governed Forward</text>
-              </g>
-              <g>
-                <rect x="305" y="326" width="110" height="14" rx="3" class="arch-mask"/>
-                <text x="360" y="336" class="arch-t-backend" font-size="8" text-anchor="middle">API Requests &amp; Auth</text>
-              </g>
-              <g>
-                <rect x="800" y="326" width="100" height="14" rx="3" class="arch-mask"/>
-                <text x="850" y="336" class="arch-t-security" font-size="8" text-anchor="middle">Governed Forward</text>
-              </g>
-              <g>
-                <rect x="210" y="486" width="60" height="14" rx="3" class="arch-mask"/>
-                <text x="240" y="496" class="arch-t-backend" font-size="8" text-anchor="middle">Device Flow</text>
-              </g>
-              <g>
-                <rect x="435" y="446" width="70" height="14" rx="3" class="arch-mask"/>
-                <text x="470" y="456" class="arch-t-backend" font-size="8" text-anchor="middle">Secure Egress</text>
-              </g>
-              <g>
-                <rect x="450" y="400" width="60" height="14" rx="3" class="arch-mask"/>
-                <text x="480" y="410" class="arch-t-messagebus" font-size="8" text-anchor="middle">Telemetry</text>
-              </g>
-              <g>
-                <rect x="815" y="436" width="70" height="14" rx="3" class="arch-mask"/>
-                <text x="850" y="446" class="arch-t-security" font-size="8" text-anchor="middle">Provider TLS</text>
-              </g>
-              <g>
-                <rect x="7" y="22" width="160" height="16" rx="3" class="arch-mask"/>
-                <text x="10" y="34" class="arch-t-cloud" font-size="8.5" font-weight="700" letter-spacing="0.05em">MANAGEMENT DEPLOYMENT</text>
-              </g>
-              <g>
-                <rect x="19" y="40" width="100" height="16" rx="3" class="arch-mask"/>
-                <text x="22" y="52" class="arch-t-security" font-size="8.5" font-weight="700" letter-spacing="0.05em">CONTROL PLANE</text>
-              </g>
-              <g>
-                <rect x="247" y="410" width="120" height="16" rx="3" class="arch-mask"/>
-                <text x="250" y="422" class="arch-t-cloud" font-size="8.5" font-weight="700" letter-spacing="0.05em">ENDPOINT ACCESS</text>
-              </g>
-              <g>
-                <rect x="479" y="24" width="145" height="16" rx="3" class="arch-mask"/>
-                <text x="482" y="36" class="arch-t-cloud" font-size="8.5" font-weight="700" letter-spacing="0.05em">GATEWAY DEPLOYMENT</text>
-              </g>
-              <g>
-                <rect x="493" y="42" width="100" height="16" rx="3" class="arch-mask"/>
-                <text x="496" y="54" class="arch-t-security" font-size="8.5" font-weight="700" letter-spacing="0.05em">GATEWAY PLANE</text>
-              </g>
-              <g>
-                <rect x="767" y="22" width="180" height="16" rx="3" class="arch-mask"/>
-                <text x="770" y="34" class="arch-t-cloud" font-size="8.5" font-weight="700" letter-spacing="0.05em">OBSERVABILITY DEPLOYMENT</text>
-              </g>
-              <g>
-                <rect x="779" y="40" width="135" height="16" rx="3" class="arch-mask"/>
-                <text x="782" y="52" class="arch-t-security" font-size="8.5" font-weight="700" letter-spacing="0.05em">TELEMETRY &amp; AUDIT</text>
               </g>
             </svg>
           </div>
