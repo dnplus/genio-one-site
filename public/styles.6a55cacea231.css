@@ -120,10 +120,10 @@ input[aria-invalid="true"] { border-color:#ff8f9e; box-shadow:0 0 0 3px rgba(255
 .architecture-pillar p { margin:0; color:var(--muted); font-size:14.5px; line-height:1.55; }
 .arch-mask { fill:#0d1320; stroke:none; }
 .arch-region { stroke-dasharray:6 4; }
-.arch-region-ctrl { fill:rgba(129,140,248,.02); stroke:rgba(129,140,248,.22); }
-.arch-region-gw { fill:rgba(56,189,248,.02); stroke:rgba(56,189,248,.22); }
-.arch-badge-control { fill:#818cf8; font-family:ui-monospace,monospace; }
-.arch-badge-gateway { fill:#38bdf8; font-family:ui-monospace,monospace; }
+.arch-region-ctrl { fill:rgba(56,189,248,.02); stroke:rgba(56,189,248,.22); }
+.arch-region-gw { fill:rgba(129,140,248,.02); stroke:rgba(129,140,248,.22); }
+.arch-badge-control { fill:#38bdf8; font-family:ui-monospace,monospace; }
+.arch-badge-gateway { fill:#818cf8; font-family:ui-monospace,monospace; }
 .arch-legend-text { fill:#aab4c9; font-family:ui-sans-serif,system-ui,sans-serif; }
 .arch-node { cursor:pointer; transition:transform 180ms ease,filter 180ms ease; }
 .arch-node:hover { transform:translateY(-1.5px); }

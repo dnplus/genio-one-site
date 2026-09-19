@@ -100,17 +100,17 @@
                 <text x="382" y="64" class="arch-t-title" font-size="12" font-weight="650">Platform Control Plane</text>
                 <text x="382" y="82" class="arch-t-sub" font-size="9">Catalog · Policy Sync · State</text>
               </g>
-              <g class="arch-node arch-ee" id="node-enterprise-iam">
+              <g class="arch-node arch-ce" id="node-identity-sso">
                 <rect x="615" y="38" width="230" height="64" rx="8" class="arch-mask"/>
-                <rect x="615" y="38" width="230" height="64" rx="8" class="arch-c-ee" stroke-width="1.5"/>
-                <text x="632" y="64" class="arch-t-title" font-size="12" font-weight="650">Enterprise IAM &amp; SSO</text>
-                <text x="632" y="82" class="arch-t-sub" font-size="9">Keycloak · Okta · RBAC Mapping</text>
+                <rect x="615" y="38" width="230" height="64" rx="8" class="arch-c-ce" stroke-width="1.5"/>
+                <text x="632" y="64" class="arch-t-title" font-size="12" font-weight="650">Identity &amp; SSO</text>
+                <text x="632" y="82" class="arch-t-sub" font-size="9">Keycloak OIDC · Role &amp; Token Auth</text>
               </g>
-              <g class="arch-node arch-ee" id="node-audit-observability">
+              <g class="arch-node arch-ce" id="node-audit-observability">
                 <rect x="865" y="38" width="240" height="64" rx="8" class="arch-mask"/>
-                <rect x="865" y="38" width="240" height="64" rx="8" class="arch-c-ee" stroke-width="1.5"/>
+                <rect x="865" y="38" width="240" height="64" rx="8" class="arch-c-ce" stroke-width="1.5"/>
                 <text x="882" y="64" class="arch-t-title" font-size="12" font-weight="650">Audit &amp; Observability</text>
-                <text x="882" y="82" class="arch-t-sub" font-size="9">OpenTelemetry · ClickHouse Logs</text>
+                <text x="882" y="82" class="arch-t-sub" font-size="9">OpenTelemetry · ClickHouse Analytics</text>
               </g>
               <g class="arch-node arch-ext" id="node-bots">
                 <rect x="40" y="150" width="220" height="58" rx="8" class="arch-mask"/>
@@ -217,8 +217,8 @@
               <path d="M 260 427 L 460 427" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
               <path d="M 740 427 L 865 427" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
               <path d="M 480 102 L 480 150" class="arch-stream-sync" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
-              <path d="M 650 102 L 650 150" class="arch-stream-sync-violet" stroke-width="1.8" marker-end="url(#arch-arrow-violet)"/>
-              <path d="M 740 185 Q 790 185 790 130 L 790 85 Q 790 70 825 70 L 865 70" class="arch-stream-telemetry" stroke-width="1.8" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 650 102 L 650 150" class="arch-stream-sync" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
+              <path d="M 740 185 Q 790 185 790 130 L 790 85 Q 790 70 825 70 L 865 70" class="arch-stream-sync" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
               <g>
                 <rect x="285" y="162" width="75" height="16" rx="4" class="arch-pill-bg"/>
                 <text x="322.5" y="174" class="arch-pill-cyan" font-size="7.5" font-weight="650" text-anchor="middle">Bot Ingress</text>
@@ -246,11 +246,11 @@
         <div class="architecture-pillars">
           <article class="architecture-pillar pillar-ce">
             <h3>Community Edition (CE)</h3>
-            <p>Open-source foundation featuring the AI &amp; MCP Gateway, unified resource catalog, and real-time policy enforcement for local and cloud environments.</p>
+            <p>Full-stack open-source control plane. Includes the AI &amp; MCP Gateway, Keycloak SSO, OpenTelemetry + ClickHouse observability, and Genio Bot.</p>
           </article>
           <article class="architecture-pillar pillar-ee">
             <h3>Enterprise Edition (EE)</h3>
-            <p>Production-grade security with Enterprise IAM/SSO integration, reverse-proxy API Gateway, Zero-Trust Access Proxy, and ClickHouse audit telemetry.</p>
+            <p>Enterprise infrastructure extensions. Adds the Enterprise API Gateway for corporate microservices, Zero-Trust Access Proxy for private VPCs, and enterprise IdP federation.</p>
           </article>
           <article class="architecture-pillar pillar-eco">
             <h3>Bots &amp; Agents Ready</h3>
