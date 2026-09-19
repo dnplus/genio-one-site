@@ -16,7 +16,7 @@
     <meta name="twitter:image" content="https://genio.sh/assets/hero-blue.webp">
     <link rel="canonical" href="https://genio.sh/">
     <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/styles.6a55cacea231.css">
+    <link rel="stylesheet" href="/styles.6f77f1a0b1d2.css">
     <title>GenioOne | One control plane for every AI agent and resource</title>
   </head>
   <body>
@@ -74,6 +74,43 @@
                 <pattern id="arch-grid" width="36" height="36" patternUnits="userSpaceOnUse">
                   <path d="M 36 0 L 0 0 0 36" stroke="rgba(234, 240, 255, 0.035)" stroke-width="0.5"/>
                 </pattern>
+                <style>
+                  .arch-mask { fill:#0d1320; stroke:none; }
+                  .arch-region { stroke-dasharray:6 4; }
+                  .arch-region-ctrl { fill:rgba(56,189,248,.02); stroke:rgba(56,189,248,.22); }
+                  .arch-region-gw { fill:rgba(129,140,248,.02); stroke:rgba(129,140,248,.22); }
+                  .arch-badge-control { fill:#38bdf8; font-family:ui-monospace,monospace; }
+                  .arch-badge-gateway { fill:#818cf8; font-family:ui-monospace,monospace; }
+                  .arch-legend-text { fill:#aab4c9; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-node { cursor:pointer; transition:transform 180ms ease,filter 180ms ease; }
+                  .arch-node:hover { transform:translateY(-1.5px); }
+                  .arch-c-ce { fill:rgba(14,165,233,.08); stroke:#38bdf8; }
+                  .arch-c-ee { fill:rgba(139,92,246,.08); stroke:#a78bfa; }
+                  .arch-c-ext { fill:rgba(100,116,139,.12); stroke:#94a3b8; }
+                  .arch-ce:hover .arch-c-ce { filter:drop-shadow(0 0 12px rgba(56,189,248,.45)); }
+                  .arch-ee:hover .arch-c-ee { filter:drop-shadow(0 0 12px rgba(167,139,250,.45)); }
+                  .arch-ext:hover .arch-c-ext { filter:drop-shadow(0 0 10px rgba(148,163,184,.35)); }
+                  .arch-t-title { fill:#f7f9ff; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-t-title-lg { fill:#f7f9ff; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-t-sub { fill:#aab4c9; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-t-sub-dim { fill:#7888a5; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-t-feature { fill:#94a3b8; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-sigil { fill:none; stroke:currentColor; stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round; }
+                  .arch-sigil-slate { color:#94a3b8; }
+                  .arch-sigil-cyan { color:#38bdf8; }
+                  .arch-sigil-violet { color:#818cf8; }
+                  .arch-track { stroke:rgba(234,240,255,.08); fill:none; }
+                  .arch-stream-cyan { stroke:#38bdf8; fill:none; stroke-dasharray:8 16; animation:arch-flow 1.2s linear infinite; }
+                  .arch-stream-violet { stroke:#818cf8; fill:none; stroke-dasharray:8 16; animation:arch-flow 1.35s linear infinite; }
+                  .arch-stream-sync { stroke:#38bdf8; fill:none; stroke-dasharray:4 8; animation:arch-flow-down 1.4s linear infinite; }
+                  .arch-pulse-glow { animation:arch-breathe-hero 3.5s ease-in-out infinite alternate; }
+                  @keyframes arch-breathe-hero { 0%,100% { filter:drop-shadow(0 0 6px rgba(56,189,248,.25)); } 50% { filter:drop-shadow(0 0 20px rgba(56,189,248,.7)); } }
+                  @keyframes arch-flow { from { stroke-dashoffset:24; } to { stroke-dashoffset:0; } }
+                  @keyframes arch-flow-down { from { stroke-dashoffset:12; } to { stroke-dashoffset:0; } }
+                  .arch-pill-bg { fill:#070b16; stroke:rgba(234,240,255,.12); stroke-width:1; }
+                  .arch-pill-cyan { fill:#38bdf8; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-pill-violet { fill:#818cf8; font-family:ui-sans-serif,system-ui,sans-serif; }
+                </style>
               </defs>
               <rect width="100%" height="100%" fill="url(#arch-grid)" />
               <rect x="350" y="22" width="770" height="94" rx="10" class="arch-region arch-region-ctrl" stroke-width="1"/>
