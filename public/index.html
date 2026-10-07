@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#070709">
+    <meta name="theme-color" content="#060913">
     <meta name="description" content="GenioOne is one control plane for every AI agent and resource.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="GenioOne | One control plane for every AI agent and resource">
@@ -16,7 +16,8 @@
     <meta name="twitter:image" content="https://genio.sh/assets/hero-blue.webp">
     <link rel="canonical" href="https://genio.sh/">
     <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/styles.6f77f1a0b1d2.css">
+    <link rel="preload" href="/assets/fonts/geist-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/styles.27b5d5607bfe.css">
     <title>GenioOne | One control plane for every AI agent and resource</title>
   </head>
   <body>
@@ -32,84 +33,136 @@
       <section class="hero shell" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">Meet GenioOne</p>
-          <h1 id="hero-title">One control plane.<br><span>Every AI resource.</span></h1>
+          <h1 id="hero-title"><span class="hero-line">One control plane.</span> <span class="hero-line hero-accent">Every AI resource.</span></h1>
           <p class="hero-summary">Give every agent governed access to your models, tools, and knowledge.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#waitlist">Join commercial waitlist <span aria-hidden="true">→</span></a><a class="button button-secondary" href="https://github.com/dnplus/genio-one">Community Edition on GitHub</a></div>
+          <div class="hero-actions"><a class="button button-primary" href="#waitlist">Join commercial waitlist <svg class="button-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false"><path d="M3 8h9.5M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="button button-secondary" href="https://github.com/dnplus/genio-one"><svg class="button-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Community Edition on GitHub</a></div>
           <div class="install-command" id="install-command">
+            <span class="install-prompt" aria-hidden="true">$</span>
             <code>curl -fsSL genio.sh/install.sh | sh</code>
             <button type="button" class="install-copy" aria-label="Copy install command">Copy</button>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true"><img src="/assets/hero-blue.webp" alt="" width="1536" height="1024" fetchpriority="high"></div>
+        <div class="hero-visual" aria-hidden="true" data-ambient><div class="hero-visual-inner"><img src="/assets/hero-blue.webp" alt="" width="1536" height="1024" fetchpriority="high"><span class="hero-halo ambient"></span></div></div>
       </section>
       <section class="statement shell" aria-labelledby="statement-title">
-        <p class="statement-kicker">AI is already everywhere.</p>
-        <h2 id="statement-title">Your control plane should be too.</h2>
-        <p>GenioOne brings the resources agents need into a single governed experience, from discovery through access and use.</p>
+        <p class="statement-kicker" data-reveal>AI is already everywhere.</p>
+        <h2 id="statement-title" class="statement-title"><span class="word" style="--i:0">Your</span> <span class="word" style="--i:1">control</span> <span class="word" style="--i:2">plane</span> <span class="word" style="--i:3">should</span> <span class="word" style="--i:4">be</span> <span class="word" style="--i:5">too.</span></h2>
+        <p data-reveal>GenioOne brings the resources agents need into a single governed experience, from discovery through access and use.</p>
       </section>
       <section class="capabilities shell" id="product" aria-labelledby="capabilities-title">
-        <div class="section-intro"><h2 id="capabilities-title">A clear path from intent to action.</h2><p>Connect what your teams already rely on, then give agents a safer way to find and use it.</p></div>
-        <div class="capability-grid">
-          <article class="capability-card capability-discovery"><h3>Resource discovery</h3><p>Bring models, MCP servers, APIs, SaaS, and knowledge into one discoverable catalog.</p><div class="resource-tags" aria-label="Resource types"><span>Models</span><span>MCP</span><span>APIs</span><span>SaaS</span><span>Knowledge</span></div></article>
-          <article class="capability-card capability-policy"><h3>Policy &amp; access</h3><p>Make access decisions where they belong, with governance that travels with every request.</p></article>
-          <article class="capability-card capability-experience"><h3>Agent experience</h3><p>Give people and agents one place to understand what is available and what they can use.</p></article>
+        <div class="section-intro" data-reveal><p class="eyebrow">Product</p><h2 id="capabilities-title">A clear path from intent to action.</h2><p>Connect what your teams already rely on, then give agents a safer way to find and use it.</p></div>
+        <div class="capability-grid" data-spotlight>
+          <article class="capability-card capability-discovery spotlight" data-reveal data-ambient>
+            <svg class="card-visual visual-orbit" viewBox="0 0 400 400" fill="none" aria-hidden="true" focusable="false">
+              <defs>
+                <radialGradient id="orbit-glow" cx="200" cy="200" r="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6580ff" stop-opacity=".4"/><stop offset=".42" stop-color="#425fea" stop-opacity=".12"/><stop offset="1" stop-color="#425fea" stop-opacity="0"/></radialGradient>
+                <radialGradient id="orbit-core-fill" cx="190" cy="188" r="34" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#cdd6ff"/><stop offset=".72" stop-color="#5470f0"/><stop offset="1" stop-color="#2a40b8"/></radialGradient>
+              </defs>
+              <circle cx="200" cy="200" r="200" fill="url(#orbit-glow)"/>
+              <g class="orbit-rings"><circle cx="200" cy="200" r="74"/><circle class="orbit-dashed" cx="200" cy="200" r="122"/><circle cx="200" cy="200" r="172"/></g>
+              <g class="orbit-spin ambient">
+                <path class="orbit-spoke" d="M200 200 305.7 139M200 200 94.3 261"/>
+                <circle class="orbit-node-halo" cx="305.7" cy="139" r="10"/><circle class="orbit-node" cx="305.7" cy="139" r="3.5"/>
+                <circle class="orbit-node-halo" cx="94.3" cy="261" r="10"/><circle class="orbit-node" cx="94.3" cy="261" r="3.5"/>
+              </g>
+              <g class="orbit-spin orbit-spin-slow ambient">
+                <path class="orbit-spoke" d="M200 200 286 349M200 200 30.6 170.1M200 200 258.8 38.4"/>
+                <circle class="orbit-node-halo" cx="286" cy="349" r="10"/><circle class="orbit-node" cx="286" cy="349" r="3.5"/>
+                <circle class="orbit-node-halo" cx="30.6" cy="170.1" r="10"/><circle class="orbit-node" cx="30.6" cy="170.1" r="3.5"/>
+                <circle class="orbit-node-halo" cx="258.8" cy="38.4" r="10"/><circle class="orbit-node" cx="258.8" cy="38.4" r="3.5"/>
+              </g>
+              <g class="orbit-core"><circle cx="200" cy="200" r="40" stroke="rgba(206,214,242,.28)"/><circle cx="200" cy="200" r="27" fill="url(#orbit-core-fill)"/></g>
+            </svg>
+            <span class="card-index" aria-hidden="true">01</span>
+            <h3>Resource discovery</h3><p>Bring models, MCP servers, APIs, SaaS, and knowledge into one discoverable catalog.</p><div class="resource-tags" aria-label="Resource types"><span>Models</span><span>MCP</span><span>APIs</span><span>SaaS</span><span>Knowledge</span></div>
+          </article>
+          <article class="capability-card capability-policy spotlight" data-reveal data-ambient>
+            <svg class="card-visual visual-rings" viewBox="0 0 320 320" fill="none" aria-hidden="true" focusable="false">
+              <defs><linearGradient id="rings-trail" x1="108" y1="250" x2="56" y2="160" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c8d2ff" stop-opacity="0"/><stop offset="1" stop-color="#c8d2ff" stop-opacity=".9"/></linearGradient></defs>
+              <circle class="rings-line" cx="160" cy="160" r="64"/><circle class="rings-line rings-line-2" cx="160" cy="160" r="104"/><circle class="rings-line rings-line-3" cx="160" cy="160" r="146"/>
+              <g class="rings-orbit ambient"><path d="M108 250.1A104 104 0 0 1 56 160" stroke="url(#rings-trail)" stroke-width="1.5" stroke-linecap="round"/><circle class="rings-dot" cx="56" cy="160" r="3.5"/></g>
+              <circle class="rings-core" cx="160" cy="160" r="26"/>
+              <path class="rings-shield" d="M160 147.5l10 4v8c0 6.6-4.3 11-10 13-5.7-2-10-6.4-10-13v-8z"/>
+            </svg>
+            <span class="card-index" aria-hidden="true">02</span>
+            <h3>Policy &amp; access</h3><p>Make access decisions where they belong, with governance that travels with every request.</p>
+          </article>
+          <article class="capability-card capability-experience spotlight" data-reveal data-ambient>
+            <svg class="card-visual visual-cube" viewBox="0 0 160 170" fill="none" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="cube-top" x1="38" y1="18" x2="122" y2="66" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e6ebff" stop-opacity=".5"/><stop offset="1" stop-color="#8ea4ff" stop-opacity=".14"/></linearGradient>
+                <linearGradient id="cube-left" x1="0" y1="42" x2="0" y2="116" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6f8bff" stop-opacity=".42"/><stop offset="1" stop-color="#425fea" stop-opacity=".06"/></linearGradient>
+                <linearGradient id="cube-right" x1="0" y1="42" x2="0" y2="116" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#425fea" stop-opacity=".28"/><stop offset="1" stop-color="#1d2b6b" stop-opacity=".04"/></linearGradient>
+                <radialGradient id="cube-shadow-fill"><stop offset="0" stop-color="#5f7cff" stop-opacity=".45"/><stop offset="1" stop-color="#5f7cff" stop-opacity="0"/></radialGradient>
+              </defs>
+              <ellipse class="cube-shadow ambient" cx="80" cy="152" rx="46" ry="8" fill="url(#cube-shadow-fill)"/>
+              <g class="cube ambient">
+                <path d="M80 18 122 42 80 66 38 42Z" fill="url(#cube-top)"/>
+                <path d="M38 42 80 66v50L38 92Z" fill="url(#cube-left)"/>
+                <path d="M122 42 80 66v50l42-24Z" fill="url(#cube-right)"/>
+                <path class="cube-hidden" d="M80 68 38 92M80 68l42 24M80 68V18"/>
+                <path class="cube-edges" d="M80 18 122 42v50l-42 24-42-24V42ZM38 42l42 24 42-24M80 66v50"/>
+              </g>
+            </svg>
+            <span class="card-index" aria-hidden="true">03</span>
+            <h3>Agent experience</h3><p>Give people and agents one place to understand what is available and what they can use.</p>
+          </article>
         </div>
       </section>
       <section class="architecture shell" id="architecture" aria-labelledby="architecture-title">
-        <div class="section-intro">
+        <div class="section-intro" data-reveal>
           <p class="eyebrow">Architecture</p>
           <h2 id="architecture-title">Enterprise-grade governance.<br>Zero boundary compromise.</h2>
           <p>How GenioOne integrates identity, multi-modal gateways, and observability into your private VPC and hybrid cloud.</p>
         </div>
-        <div class="architecture-card">
+        <div class="architecture-card" data-reveal data-ambient>
           <div class="architecture-svg-wrapper">
             <svg class="architecture-svg" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GenioOne Control Plane Architecture">
               <defs>
                 <marker id="arch-arrow-cyan" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
-                  <polygon points="0 0, 9 3, 0 6" fill="#38bdf8" />
+                  <polygon points="0 0, 9 3, 0 6" fill="#8fa6ff" />
                 </marker>
                 <marker id="arch-arrow-violet" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
-                  <polygon points="0 0, 9 3, 0 6" fill="#818cf8" />
+                  <polygon points="0 0, 9 3, 0 6" fill="#b9a2ff" />
                 </marker>
                 <pattern id="arch-grid" width="36" height="36" patternUnits="userSpaceOnUse">
                   <path d="M 36 0 L 0 0 0 36" stroke="rgba(234, 240, 255, 0.035)" stroke-width="0.5"/>
                 </pattern>
                 <style>
                   .arch-mask { fill:#0d1320; stroke:none; }
-                  .arch-region { stroke-dasharray:6 4; }
-                  .arch-region-ctrl { fill:rgba(56,189,248,.02); stroke:rgba(56,189,248,.22); }
-                  .arch-region-gw { fill:rgba(129,140,248,.02); stroke:rgba(129,140,248,.22); }
-                  .arch-badge-control { fill:#38bdf8; font-family:ui-monospace,monospace; }
-                  .arch-badge-gateway { fill:#818cf8; font-family:ui-monospace,monospace; }
-                  .arch-legend-text { fill:#aab4c9; font-family:ui-sans-serif,system-ui,sans-serif; }
-                  .arch-node { cursor:pointer; transition:transform 180ms ease,filter 180ms ease; }
+                  .arch-region { stroke-dasharray:4 5; }
+                  .arch-region-ctrl { fill:rgba(143,166,255,.025); stroke:rgba(143,166,255,.24); }
+                  .arch-region-gw { fill:rgba(185,162,255,.025); stroke:rgba(185,162,255,.24); }
+                  .arch-badge-control { fill:#a9bbff; font-family:"Geist Mono",ui-monospace,monospace; }
+                  .arch-badge-gateway { fill:#cbb9ff; font-family:"Geist Mono",ui-monospace,monospace; }
+                  .arch-legend-text { fill:#aab4c9; font-family:"Geist",ui-sans-serif,system-ui,sans-serif; }
+                  .arch-node { transition:transform 180ms ease,filter 180ms ease; }
                   .arch-node:hover { transform:translateY(-1.5px); }
-                  .arch-c-ce { fill:rgba(14,165,233,.08); stroke:#38bdf8; }
-                  .arch-c-ee { fill:rgba(139,92,246,.08); stroke:#a78bfa; }
-                  .arch-c-ext { fill:rgba(100,116,139,.12); stroke:#94a3b8; }
-                  .arch-ce:hover .arch-c-ce { filter:drop-shadow(0 0 12px rgba(56,189,248,.45)); }
-                  .arch-ee:hover .arch-c-ee { filter:drop-shadow(0 0 12px rgba(167,139,250,.45)); }
-                  .arch-ext:hover .arch-c-ext { filter:drop-shadow(0 0 10px rgba(148,163,184,.35)); }
-                  .arch-t-title { fill:#f7f9ff; font-family:ui-sans-serif,system-ui,sans-serif; }
-                  .arch-t-title-lg { fill:#f7f9ff; font-family:ui-sans-serif,system-ui,sans-serif; }
-                  .arch-t-sub { fill:#aab4c9; font-family:ui-sans-serif,system-ui,sans-serif; }
-                  .arch-t-sub-dim { fill:#7888a5; font-family:ui-sans-serif,system-ui,sans-serif; }
-                  .arch-t-feature { fill:#94a3b8; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-c-ce { fill:rgba(95,124,255,.09); stroke:rgba(143,166,255,.85); stroke-width:1.2; }
+                  .arch-c-ee { fill:rgba(160,124,255,.09); stroke:rgba(185,162,255,.85); stroke-width:1.2; }
+                  .arch-c-ext { fill:rgba(170,180,201,.05); stroke:rgba(170,180,201,.42); stroke-width:1.2; }
+                  .arch-ce:hover .arch-c-ce { filter:drop-shadow(0 0 12px rgba(143,166,255,.45)); }
+                  .arch-ee:hover .arch-c-ee { filter:drop-shadow(0 0 12px rgba(185,162,255,.45)); }
+                  .arch-ext:hover .arch-c-ext { filter:drop-shadow(0 0 10px rgba(170,180,201,.3)); }
+                  .arch-glow { filter:drop-shadow(0 0 18px rgba(95,124,255,.3)); }
+                  .arch-t-title { fill:#f7f9ff; font-family:"Geist",ui-sans-serif,system-ui,sans-serif; }
+                  .arch-t-title-lg { fill:#f7f9ff; font-family:"Geist",ui-sans-serif,system-ui,sans-serif; }
+                  .arch-t-sub { fill:#aab4c9; font-family:"Geist",ui-sans-serif,system-ui,sans-serif; }
+                  .arch-t-sub-dim { fill:#7888a5; font-family:"Geist",ui-sans-serif,system-ui,sans-serif; }
+                  .arch-t-feature { fill:#9aa6bf; font-family:"Geist",ui-sans-serif,system-ui,sans-serif; }
                   .arch-sigil { fill:none; stroke:currentColor; stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round; }
-                  .arch-sigil-slate { color:#94a3b8; }
-                  .arch-sigil-cyan { color:#38bdf8; }
-                  .arch-sigil-violet { color:#818cf8; }
-                  .arch-track { stroke:rgba(234,240,255,.08); fill:none; }
-                  .arch-stream-cyan { stroke:#38bdf8; fill:none; stroke-dasharray:8 16; animation:arch-flow 1.2s linear infinite; }
-                  .arch-stream-violet { stroke:#818cf8; fill:none; stroke-dasharray:8 16; animation:arch-flow 1.35s linear infinite; }
-                  .arch-stream-sync { stroke:#38bdf8; fill:none; stroke-dasharray:4 8; animation:arch-flow-down 1.4s linear infinite; }
-                  .arch-pulse-glow { animation:arch-breathe-hero 3.5s ease-in-out infinite alternate; }
-                  @keyframes arch-breathe-hero { 0%,100% { filter:drop-shadow(0 0 6px rgba(56,189,248,.25)); } 50% { filter:drop-shadow(0 0 20px rgba(56,189,248,.7)); } }
-                  @keyframes arch-flow { from { stroke-dashoffset:24; } to { stroke-dashoffset:0; } }
-                  @keyframes arch-flow-down { from { stroke-dashoffset:12; } to { stroke-dashoffset:0; } }
-                  .arch-pill-bg { fill:#070b16; stroke:rgba(234,240,255,.12); stroke-width:1; }
-                  .arch-pill-cyan { fill:#38bdf8; font-family:ui-sans-serif,system-ui,sans-serif; }
-                  .arch-pill-violet { fill:#818cf8; font-family:ui-sans-serif,system-ui,sans-serif; }
+                  .arch-sigil-slate { color:#aab4c9; }
+                  .arch-sigil-cyan { color:#8fa6ff; }
+                  .arch-sigil-violet { color:#b9a2ff; }
+                  .arch-track { stroke:rgba(234,240,255,.09); fill:none; }
+                  .arch-stream-cyan { stroke:#b4c3ff; fill:none; stroke-linecap:round; stroke-dasharray:16 600; animation:arch-flow 3.6s linear infinite; }
+                  .arch-stream-violet { stroke:#d2c4ff; fill:none; stroke-linecap:round; stroke-dasharray:16 600; animation:arch-flow 4.2s linear infinite; }
+                  .arch-stream-sync { stroke:#b4c3ff; fill:none; stroke-linecap:round; stroke-dasharray:8 600; animation:arch-flow-short 2.8s linear infinite; }
+                  @keyframes arch-flow { from { stroke-dashoffset:16; } to { stroke-dashoffset:-320; } }
+                  @keyframes arch-flow-short { from { stroke-dashoffset:8; } to { stroke-dashoffset:-160; } }
+                  .arch-pill-bg { fill:#080c18; stroke:rgba(234,240,255,.1); stroke-width:1; }
+                  .arch-pill-cyan { fill:#a9bbff; font-family:"Geist",ui-sans-serif,system-ui,sans-serif; }
+                  .arch-pill-violet { fill:#cbb9ff; font-family:"Geist",ui-sans-serif,system-ui,sans-serif; }
                 </style>
               </defs>
               <rect width="100%" height="100%" fill="url(#arch-grid)" />
@@ -124,11 +177,11 @@
                 <text x="600" y="136" class="arch-badge-gateway" font-size="8" font-weight="700" letter-spacing="0.06em" text-anchor="middle">EXECUTION GATEWAYS</text>
               </g>
               <g transform="translate(40, 42)">
-                <rect x="0" y="0" width="10" height="10" rx="2.5" fill="rgba(56, 189, 248, 0.2)" stroke="#38bdf8" stroke-width="1"/>
+                <rect x="0" y="0" width="10" height="10" rx="2.5" fill="rgba(143,166,255,.2)" stroke="#8fa6ff" stroke-width="1"/>
                 <text x="16" y="9" class="arch-legend-text" font-size="9">Community Edition (CE)</text>
-                <rect x="0" y="20" width="10" height="10" rx="2.5" fill="rgba(129, 140, 248, 0.2)" stroke="#818cf8" stroke-width="1"/>
+                <rect x="0" y="20" width="10" height="10" rx="2.5" fill="rgba(185,162,255,.2)" stroke="#b9a2ff" stroke-width="1"/>
                 <text x="16" y="29" class="arch-legend-text" font-size="9">Enterprise Edition (EE)</text>
-                <rect x="0" y="40" width="10" height="10" rx="2.5" fill="rgba(148, 163, 184, 0.2)" stroke="#94a3b8" stroke-width="1"/>
+                <rect x="0" y="40" width="10" height="10" rx="2.5" fill="rgba(170,180,201,.16)" stroke="#aab4c9" stroke-width="1"/>
                 <text x="16" y="49" class="arch-legend-text" font-size="9">External Ecosystem</text>
               </g>
               <g class="arch-node arch-ce" id="node-ctrl-plane">
@@ -191,12 +244,12 @@
                 <text x="76" y="422" class="arch-t-title" font-size="12" font-weight="650">Developer Workstations</text>
                 <text x="76" y="440" class="arch-t-sub" font-size="9">Local CLI · Private VPC Traffic</text>
               </g>
-              <g class="arch-node arch-ce arch-pulse-glow" id="node-ai-mcp-gw">
+              <g class="arch-node arch-ce arch-glow" id="node-ai-mcp-gw">
                 <rect x="460" y="150" width="280" height="134" rx="9" class="arch-mask"/>
                 <rect x="460" y="150" width="280" height="134" rx="9" class="arch-c-ce" stroke-width="2"/>
                 <text x="480" y="182" class="arch-t-title-lg" font-size="14" font-weight="700">AI &amp; MCP Gateway</text>
                 <text x="480" y="201" class="arch-t-sub" font-size="9.5">Prompt Guardrails · Model Routing</text>
-                <path d="M 480 216 L 720 216" stroke="rgba(56, 189, 248, 0.15)" stroke-width="1"/>
+                <path d="M 480 216 L 720 216" stroke="rgba(143,166,255,.18)" stroke-width="1"/>
                 <text x="480" y="234" class="arch-t-feature" font-size="9">&#10003; Model &amp; Tool Discovery Catalog</text>
                 <text x="480" y="250" class="arch-t-feature" font-size="9">&#10003; Dynamic MCP Tool Invocation</text>
                 <text x="480" y="266" class="arch-t-feature" font-size="9">&#10003; Policy Enforcement &amp; Caching</text>
@@ -236,26 +289,26 @@
                 <text x="885" y="444" class="arch-t-sub" font-size="9">OpenAI · Anthropic · Google Gemini</text>
                 <text x="885" y="460" class="arch-t-sub-dim" font-size="8.5">External Third-Party SaaS Providers</text>
               </g>
-              <path d="M 260 179 L 360 179 Q 380 179 380 195 L 380 205 Q 380 217 400 217 L 460 217" class="arch-track" stroke-width="2"/>
-              <path d="M 260 255 L 360 255 Q 380 255 380 239 L 380 229 Q 380 217 400 217 L 460 217" class="arch-track" stroke-width="2"/>
-              <path d="M 740 217 L 865 217" class="arch-track" stroke-width="2"/>
-              <path d="M 260 341 L 460 341" class="arch-track" stroke-width="2"/>
-              <path d="M 740 341 L 865 341" class="arch-track" stroke-width="2"/>
-              <path d="M 260 427 L 460 427" class="arch-track" stroke-width="2"/>
-              <path d="M 740 427 L 865 427" class="arch-track" stroke-width="2"/>
-              <path d="M 485 102 L 485 132" class="arch-track" stroke-width="1.5"/>
-              <path d="M 715 102 L 715 132" class="arch-track" stroke-width="1.5"/>
-              <path d="M 755 145 Q 800 145 800 110 L 800 85 Q 800 70 835 70 L 865 70" class="arch-track" stroke-width="1.5"/>
-              <path d="M 260 179 L 360 179 Q 380 179 380 195 L 380 205 Q 380 217 400 217 L 460 217" class="arch-stream-cyan" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
-              <path d="M 260 255 L 360 255 Q 380 255 380 239 L 380 229 Q 380 217 400 217 L 460 217" class="arch-stream-cyan" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
-              <path d="M 740 217 L 865 217" class="arch-stream-cyan" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
-              <path d="M 260 341 L 460 341" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
-              <path d="M 740 341 L 865 341" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
-              <path d="M 260 427 L 460 427" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
-              <path d="M 740 427 L 865 427" class="arch-stream-violet" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
-              <path d="M 485 102 L 485 132" class="arch-stream-sync" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
-              <path d="M 715 102 L 715 132" class="arch-stream-sync" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
-              <path d="M 755 145 Q 800 145 800 110 L 800 85 Q 800 70 835 70 L 865 70" class="arch-stream-sync" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
+              <path d="M 260 179 L 360 179 Q 380 179 380 195 L 380 205 Q 380 217 400 217 L 460 217" class="arch-track" stroke-width="2" pathLength="1"/>
+              <path d="M 260 255 L 360 255 Q 380 255 380 239 L 380 229 Q 380 217 400 217 L 460 217" class="arch-track" stroke-width="2" pathLength="1"/>
+              <path d="M 740 217 L 865 217" class="arch-track" stroke-width="2" pathLength="1"/>
+              <path d="M 260 341 L 460 341" class="arch-track" stroke-width="2" pathLength="1"/>
+              <path d="M 740 341 L 865 341" class="arch-track" stroke-width="2" pathLength="1"/>
+              <path d="M 260 427 L 460 427" class="arch-track" stroke-width="2" pathLength="1"/>
+              <path d="M 740 427 L 865 427" class="arch-track" stroke-width="2" pathLength="1"/>
+              <path d="M 485 102 L 485 132" class="arch-track" stroke-width="1.5" pathLength="1"/>
+              <path d="M 715 102 L 715 132" class="arch-track" stroke-width="1.5" pathLength="1"/>
+              <path d="M 755 145 Q 800 145 800 110 L 800 85 Q 800 70 835 70 L 865 70" class="arch-track" stroke-width="1.5" pathLength="1"/>
+              <path d="M 260 179 L 360 179 Q 380 179 380 195 L 380 205 Q 380 217 400 217 L 460 217" class="arch-stream-cyan ambient" style="animation-delay:-.2s" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
+              <path d="M 260 255 L 360 255 Q 380 255 380 239 L 380 229 Q 380 217 400 217 L 460 217" class="arch-stream-cyan ambient" style="animation-delay:-1.9s" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
+              <path d="M 740 217 L 865 217" class="arch-stream-cyan ambient" style="animation-delay:-1.54s" stroke-width="2.4" marker-end="url(#arch-arrow-cyan)"/>
+              <path d="M 260 341 L 460 341" class="arch-stream-violet ambient" style="animation-delay:-.6s" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 740 341 L 865 341" class="arch-stream-violet ambient" style="animation-delay:-2.3s" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 260 427 L 460 427" class="arch-stream-violet ambient" style="animation-delay:-2s" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 740 427 L 865 427" class="arch-stream-violet ambient" style="animation-delay:-3.7s" stroke-width="2.4" marker-end="url(#arch-arrow-violet)"/>
+              <path d="M 485 102 L 485 132" class="arch-stream-sync ambient" style="animation-delay:-.4s" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
+              <path d="M 715 102 L 715 132" class="arch-stream-sync ambient" style="animation-delay:-1.6s" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
+              <path d="M 755 145 Q 800 145 800 110 L 800 85 Q 800 70 835 70 L 865 70" class="arch-stream-sync ambient" style="animation-delay:-.9s" stroke-width="1.8" marker-end="url(#arch-arrow-cyan)"/>
               <g>
                 <rect x="268" y="162" width="104" height="16" rx="4" class="arch-pill-bg"/>
                 <text x="320" y="174" class="arch-pill-cyan" font-size="7.5" font-weight="650" text-anchor="middle">Agent Tasks &amp; Tools</text>
@@ -292,24 +345,24 @@
           </div>
           <p class="architecture-scroll-hint" aria-hidden="true">Scroll horizontally to explore topology &rarr;</p>
         </div>
-        <div class="architecture-pillars">
-          <article class="architecture-pillar pillar-ce">
+        <div class="architecture-pillars" data-spotlight>
+          <article class="architecture-pillar pillar-ce spotlight" data-reveal>
             <h3>Community Edition (CE)</h3>
             <p>Full-stack open-source control plane. Includes the AI &amp; MCP Gateway, Keycloak SSO, OpenTelemetry + ClickHouse observability, and Genio Bot.</p>
           </article>
-          <article class="architecture-pillar pillar-ee">
+          <article class="architecture-pillar pillar-ee spotlight" data-reveal>
             <h3>Enterprise Edition (EE)</h3>
             <p>Enterprise infrastructure extensions. Adds the Enterprise API Gateway for corporate microservices, Zero-Trust Access Proxy for private VPCs, and enterprise IdP federation.</p>
           </article>
-          <article class="architecture-pillar pillar-eco">
+          <article class="architecture-pillar pillar-eco spotlight" data-reveal>
             <h3>Out-of-the-Box Agent Bot</h3>
             <p>Comes out of the box with Genio Bot—a governed Agent Bot workspace for autonomous task execution and MCP tool usage—plus turnkey ingress for IDE copilots (Cursor, Claude Code) and custom agents.</p>
           </article>
         </div>
       </section>
-      <section class="waitlist-section shell" id="waitlist" aria-labelledby="waitlist-title">
-        <div class="waitlist-copy"><p class="eyebrow">Enterprise edition</p><h2 id="waitlist-title">Agents are ready.<br>Is your enterprise?</h2><p>Join the waitlist for GenioOne’s commercial enterprise edition. Get early access and launch updates.</p></div>
-        <form class="waitlist-form" id="waitlist-form" novalidate>
+      <section class="waitlist-section shell" id="waitlist" aria-labelledby="waitlist-title" data-ambient>
+        <div class="waitlist-copy" data-reveal><p class="eyebrow">Enterprise edition</p><h2 id="waitlist-title">Agents are ready.<br>Is your enterprise?</h2><p>Join the waitlist for GenioOne’s commercial enterprise edition. Get early access and launch updates.</p></div>
+        <form class="waitlist-form" id="waitlist-form" novalidate data-reveal>
           <div class="field-row"><label for="name">Name <span>optional</span></label><input id="name" name="name" type="text" autocomplete="name" maxlength="120"></div>
           <div class="field-row"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required aria-describedby="form-message privacy-note"></div>
           <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
@@ -320,6 +373,6 @@
       </section>
     </main>
     <footer class="site-footer shell"><a class="footer-brand" href="/" aria-label="GenioOne home"><img src="/assets/logo.svg" alt="GenioOne" width="141" height="40"></a><div><a href="/privacy.html">Privacy</a><a href="https://github.com/dnplus/genio-one" aria-label="Community Edition on GitHub">Community Edition</a></div></footer>
-    <script src="/app.44f2c9f408cc.js" defer></script>
+    <script src="/app.814beb8c6989.js" defer></script>
   <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "029cc6c50cad4a95977b19a3e3e03f37"}'></script><!-- Cloudflare Pages Analytics --></body>
 </html>
